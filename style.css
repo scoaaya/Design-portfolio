@@ -465,3 +465,84 @@ footer {
     }
 
 }
+/* PROJETOS MAIS COMPACTOS */
+
+.projects {
+    padding: 65px 0;
+}
+
+.projects-category {
+    width: min(900px, 88%);
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.project-image {
+    height: 260px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.project-info h3 {
+    font-size: 13px;
+}
+
+.category-title {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.banners-category {
+    margin-top: 50px;
+}
+
+
+/* MODAL DA IMAGEM */
+
+.modal-imagem {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    background: rgba(30, 20, 25, 0.85);
+
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.modal-imagem.ativo {
+    display: flex;
+}
+
+.modal-imagem img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+.fechar-modal {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+
+    font-size: 35px;
+    cursor: pointer;
+}
