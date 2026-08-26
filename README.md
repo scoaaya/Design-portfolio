@@ -19,7 +19,7 @@ Este projeto foi criado como um espaço visual para apresentar trabalhos desenvo
 
 ## Visualizar projeto
 
-🔗 **Acesse o portfólio:** [Clique aqui](COLE_AQUI_O_LINK_DO_SITE)
+🔗 **Acesse o portfólio:** [Clique aqui](https://scoaaya.github.io/Design-portfolio/)
 
 ## Autora
 
