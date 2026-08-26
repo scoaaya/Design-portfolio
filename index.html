@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+    <script>
+    function abrirImagem(src) {
+        const modal = document.getElementById("modalImagem");
+        const imagem = document.getElementById("imagemAmpliada");
+
+        imagem.src = src;
+        modal.classList.add("ativo");
+    }
+
+    function fecharImagem() {
+        document
+            .getElementById("modalImagem")
+            .classList.remove("ativo");
+    }
+</script>
 <body>
 
     <!-- HEADER -->
