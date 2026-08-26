@@ -53,34 +53,114 @@
 
         <!-- PROJETOS -->
 
-        <section class="projects" id="projetos">
+<section class="projects" id="projetos">
 
-            <div class="container">
+    <div class="projects-category">
 
-                <div class="section-title">
-                    <p class="eyebrow">PORTFÓLIO</p>
-                    <h2>Projetos selecionados</h2>
+        <div class="section-title">
+            <p class="eyebrow">PORTFÓLIO</p>
+            <h2>Projetos selecionados</h2>
+        </div>
+
+        <h3 class="category-title">Criativos para anúncios</h3>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="assets/projetos/ADESIVO FEED.jpg"
+                        alt="Criativo Adesivo Feed"
+                        onclick="abrirImagem(this.src)">
                 </div>
 
+                <div class="project-info">
+                    <h3>Adesivo Feed</h3>
+                </div>
+            </article>
 
-                <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="assets/projetos/AYUMI B2B feed.jpg"
+                        alt="Criativo Ayumi B2B"
+                        onclick="abrirImagem(this.src)">
+                </div>
 
-                    <!-- PROJETO 01 -->
+                <div class="project-info">
+                    <h3>Ayumi B2B</h3>
+                </div>
+            </article>
 
-                    <article class="project-card">
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="assets/projetos/BOLSAS ELETRONICOS FEED.jpg"
+                        alt="Criativo Bolsas para Eletrônicos"
+                        onclick="abrirImagem(this.src)">
+                </div>
 
-                        <div class="project-image">
-                            <img
-                                src="assets/projetos/ADESIVO FEED.jpg"
-                                alt="Projeto Adesivo Feed">
-                        </div>
+                <div class="project-info">
+                    <h3>Bolsas para Eletrônicos</h3>
+                </div>
+            </article>
 
-                        <div class="project-info">
-                            <h3>Adesivo Feed</h3>
-                            <span>Projeto de comunicação visual</span>
-                        </div>
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="assets/projetos/BOLSAS JOALHERIA FEED.jpg"
+                        alt="Criativo Bolsas & Joalheria"
+                        onclick="abrirImagem(this.src)">
+                </div>
 
-                    </article>
+                <div class="project-info">
+                    <h3>Bolsas &amp; Joalheria</h3>
+                </div>
+            </article>
+
+        </div>
+
+
+        <div class="banners-category">
+
+            <h3 class="category-title">Banners para sites</h3>
+
+            <div class="projects-grid">
+
+                <!-- QUANDO ADICIONAR AS IMAGENS, COPIE ESTE BLOCO -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img
+                            src="assets/projetos/banner-01.jpg"
+                            alt="Banner para site"
+                            onclick="abrirImagem(this.src)">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Banner para site</h3>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MODAL PARA ABRIR AS IMAGENS -->
+
+<div class="modal-imagem" id="modalImagem" onclick="fecharImagem()">
+
+    <button class="fechar-modal" aria-label="Fechar imagem">
+        ×
+    </button>
+
+    <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+
+</div>
 
 
                     <!-- PROJETO 02 -->
