@@ -72,6 +72,7 @@ body {
 .nav a {
     color: #756971;
     text-decoration: none;
+
     font-size: 12px;
 
     transition: 0.2s ease;
@@ -166,13 +167,12 @@ body {
 /* PROJETOS */
 
 .projects {
-    padding: 90px 0;
+    padding: 70px 0;
     background: #fff4f6;
 }
 
 .section-title {
-    max-width: 600px;
-    margin-bottom: 65px;
+    margin-bottom: 40px;
 }
 
 .section-title h2 {
@@ -183,84 +183,26 @@ body {
     font-weight: 500;
 
     line-height: 1.1;
-    margin-bottom: 12px;
-}
-
-.section-title span {
-    color: #82777d;
-    font-size: 13px;
-    line-height: 1.7;
 }
 
 
 /* CATEGORIAS */
 
-.portfolio-category {
-    margin-bottom: 70px;
+.projects-category {
+    margin-top: 45px;
 }
 
-.portfolio-category:last-child {
-    margin-bottom: 0;
+.projects-category:first-of-type {
+    margin-top: 0;
 }
 
-.category-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    gap: 30px;
-
-    margin-bottom: 22px;
-    padding-bottom: 14px;
-
-    border-bottom: 1px solid #eadde0;
-}
-
-.category-number {
-    color: #c98b9e;
-
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 2px;
-
-    margin-bottom: 8px;
-}
-
-.category-header h3 {
+.category-title {
     color: #413940;
 
-    font-size: 19px;
-    font-weight: 500;
-}
+    font-size: 15px;
+    font-weight: 600;
 
-
-/* BOTÕES DO CARROSSEL */
-
-.carousel-buttons {
-    display: flex;
-    gap: 7px;
-}
-
-.carousel-btn {
-    width: 36px;
-    height: 36px;
-
-    border: 1px solid #e6d4da;
-    border-radius: 50%;
-
-    background: #ffffff;
-    color: #8b6f78;
-
-    font-size: 16px;
-    cursor: pointer;
-
-    transition: 0.25s ease;
-}
-
-.carousel-btn:hover {
-    background: #e6a2b8;
-    border-color: #e6a2b8;
-    color: #ffffff;
+    margin-bottom: 18px;
 }
 
 
@@ -268,32 +210,44 @@ body {
 
 .projects-carousel {
     display: flex;
-    gap: 14px;
+    gap: 16px;
+
+    width: 100%;
 
     overflow-x: auto;
+    overflow-y: hidden;
 
-    scroll-behavior: smooth;
+    padding: 4px 2px 14px;
 
-    padding-bottom: 12px;
-
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #e6a2b8 #f8e9ed;
 }
 
 .projects-carousel::-webkit-scrollbar {
-    display: none;
+    height: 6px;
+}
+
+.projects-carousel::-webkit-scrollbar-track {
+    background: #f8e9ed;
+    border-radius: 10px;
+}
+
+.projects-carousel::-webkit-scrollbar-thumb {
+    background: #e6a2b8;
+    border-radius: 10px;
 }
 
 
-/* CARDS PEQUENOS */
+/* CARDS DOS CRIATIVOS */
 
-.mini-project-card {
-    flex: 0 0 185px;
-    min-width: 185px;
+.projects-carousel .project-card {
+    flex: 0 0 180px;
+    min-width: 0;
 }
 
-.mini-project-image {
+.project-image {
     width: 100%;
-    height: 235px;
+    height: 220px;
 
     display: flex;
     align-items: center;
@@ -301,12 +255,14 @@ body {
 
     overflow: hidden;
 
-    background: #f7ebee;
-    border: 1px solid #eedfe3;
     border-radius: 10px;
+
+    background: #f7e7ec;
+
+    margin-bottom: 10px;
 }
 
-.mini-project-image img {
+.project-image img {
     width: 100%;
     height: 100%;
 
@@ -317,45 +273,39 @@ body {
     transition: transform 0.3s ease;
 }
 
-.mini-project-card:hover .mini-project-image img {
-    transform: scale(1.03);
+.project-card:hover .project-image img {
+    transform: scale(1.02);
+}
+
+.project-info h3 {
+    color: #413940;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
 }
 
 
 /* BANNERS */
 
-.banner-card {
-    flex-basis: 300px;
-    min-width: 300px;
+.banners-category {
+    margin-top: 55px;
 }
 
-.banner-image {
-    height: 160px;
+.banners-carousel {
+    overflow-x: visible;
 }
 
-.banner-image img {
-    object-fit: contain;
+.banners-carousel .banner-card {
+    flex: 0 0 min(600px, 100%);
 }
 
+.banner-card .project-image {
+    width: 100%;
+    height: 220px;
 
-/* INFORMAÇÕES DOS PROJETOS */
-
-.mini-project-info {
-    padding-top: 10px;
-}
-
-.mini-project-info h4 {
-    color: #4a4448;
-
-    font-size: 12px;
-    font-weight: 600;
-
-    margin-bottom: 4px;
-}
-
-.mini-project-info span {
-    color: #9b8f94;
-    font-size: 10px;
+    background: #f7e7ec;
 }
 
 
@@ -372,6 +322,7 @@ body {
     grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
 
     align-items: center;
+
     gap: 80px;
 }
 
@@ -429,6 +380,7 @@ body {
     flex-wrap: wrap;
 
     gap: 8px;
+
     margin-top: 28px;
 }
 
@@ -498,6 +450,7 @@ footer {
 
 .copyright {
     color: #9b858d;
+
     font-size: 10px;
 }
 
@@ -553,34 +506,24 @@ footer {
         padding: 75px 0;
     }
 
-    .section-title {
-        margin-bottom: 45px;
+    .projects-carousel .project-card {
+        flex-basis: 150px;
     }
 
-    .portfolio-category {
-        margin-bottom: 55px;
-    }
-
-    .category-header h3 {
-        font-size: 17px;
-    }
-
-    .mini-project-card {
-        flex-basis: 145px;
-        min-width: 145px;
-    }
-
-    .mini-project-image {
+    .project-image {
         height: 185px;
     }
 
-    .banner-card {
-        flex-basis: 230px;
-        min-width: 230px;
+    .banners-carousel {
+        overflow-x: visible;
     }
 
-    .banner-image {
-        height: 120px;
+    .banners-carousel .banner-card {
+        flex-basis: 100%;
+    }
+
+    .banner-card .project-image {
+        height: 125px;
     }
 
     .about-image img {
