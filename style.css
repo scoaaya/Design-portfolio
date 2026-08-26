@@ -9,15 +9,19 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     background: #fffafb;
     color: #3f3740;
+
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
+
     overflow-x: hidden;
 }
 
@@ -43,40 +47,51 @@ body {
     padding: 0 6%;
 
     background: rgba(255, 250, 251, 0.96);
+
     border-bottom: 1px solid #f0dfe5;
 
     position: sticky;
     top: 0;
+
     z-index: 100;
 }
 
+
 .logo {
     color: #413940;
+
     text-decoration: none;
 
     font-size: 14px;
     font-weight: 600;
+
     letter-spacing: 2px;
 }
+
 
 .logo span {
     color: #d989a3;
 }
 
+
 .nav {
     display: flex;
     align-items: center;
+
     gap: 24px;
 }
 
+
 .nav a {
     color: #756971;
+
     text-decoration: none;
 
     font-size: 12px;
 
     transition: 0.2s ease;
 }
+
 
 .nav a:hover {
     color: #d989a3;
@@ -100,22 +115,28 @@ body {
         #fffafb;
 }
 
+
 .hero-content {
     max-width: 700px;
 }
+
 
 .eyebrow {
     color: #c97894;
 
     font-size: 10px;
     font-weight: 600;
+
     letter-spacing: 2px;
 
     margin-bottom: 18px;
 }
 
+
 .hero h1 {
     max-width: 720px;
+
+    color: #413940;
 
     font-family: "Playfair Display", serif;
     font-size: clamp(42px, 6vw, 76px);
@@ -125,9 +146,8 @@ body {
     letter-spacing: -2px;
 
     margin-bottom: 24px;
-
-    color: #413940;
 }
+
 
 .hero-text {
     max-width: 480px;
@@ -139,6 +159,7 @@ body {
 
     margin-bottom: 30px;
 }
+
 
 .button {
     display: inline-block;
@@ -158,8 +179,10 @@ body {
     transition: 0.25s ease;
 }
 
+
 .button:hover {
     background: #d989a3;
+
     transform: translateY(-2px);
 }
 
@@ -167,13 +190,22 @@ body {
 /* PROJETOS */
 
 .projects {
-    padding: 70px 0;
+    padding: 75px 0;
+
     background: #fff4f6;
 }
 
-.section-title {
-    margin-bottom: 40px;
+
+.projects-category {
+    width: min(1100px, 88%);
+    margin: 0 auto;
 }
+
+
+.section-title {
+    margin-bottom: 45px;
+}
+
 
 .section-title h2 {
     color: #413940;
@@ -183,84 +215,79 @@ body {
     font-weight: 500;
 
     line-height: 1.1;
+
+    margin-bottom: 12px;
 }
 
 
-/* CATEGORIAS */
+.section-description {
+    color: #8a7a82;
 
-.projects-category {
-    margin-top: 45px;
+    font-size: 13px;
 }
 
-.projects-category:first-of-type {
-    margin-top: 0;
+
+/* CATEGORIA */
+
+.category-header {
+    margin-bottom: 20px;
 }
+
 
 .category-title {
     color: #413940;
 
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
-
-    margin-bottom: 18px;
 }
 
 
 /* CARROSSEL */
 
-.projects-carousel {
+.projects-grid {
     display: flex;
+
     gap: 16px;
 
-    width: 100%;
-
     overflow-x: auto;
-    overflow-y: hidden;
 
-    padding: 4px 2px 14px;
+    padding-bottom: 15px;
 
-    scrollbar-width: thin;
-    scrollbar-color: #e6a2b8 #f8e9ed;
-}
-
-.projects-carousel::-webkit-scrollbar {
-    height: 6px;
-}
-
-.projects-carousel::-webkit-scrollbar-track {
-    background: #f8e9ed;
-    border-radius: 10px;
-}
-
-.projects-carousel::-webkit-scrollbar-thumb {
-    background: #e6a2b8;
-    border-radius: 10px;
+    scrollbar-width: none;
 }
 
 
-/* CARDS DOS CRIATIVOS */
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
 
-.projects-carousel .project-card {
+
+/* CARD */
+
+.project-card {
     flex: 0 0 180px;
-    min-width: 0;
+    min-width: 180px;
+
+    cursor: pointer;
 }
+
+
+/* IMAGEM */
 
 .project-image {
     width: 100%;
-    height: 220px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    border-radius: 10px;
-
-    background: #f7e7ec;
+    height: 200px;
 
     margin-bottom: 10px;
+
+    background: transparent;
+
+    border: none;
+    border-radius: 0;
+
+    overflow: hidden;
 }
+
 
 .project-image img {
     width: 100%;
@@ -268,44 +295,62 @@ body {
 
     display: block;
 
-    object-fit: contain;
+    object-fit: cover;
+
+    border: none;
+    border-radius: 0;
+
+    cursor: pointer;
 
     transition: transform 0.3s ease;
 }
 
+
 .project-card:hover .project-image img {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
+
+
+/* INFORMAÇÕES */
 
 .project-info h3 {
     color: #413940;
 
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 
-    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+
+.project-info span {
+    color: #8a7a82;
+
+    font-size: 11px;
+    line-height: 1.5;
 }
 
 
 /* BANNERS */
 
 .banners-category {
-    margin-top: 55px;
+    margin-top: 65px;
 }
 
-.banners-carousel {
-    overflow-x: visible;
+
+.banners-grid .project-card {
+    flex: 0 0 600px;
+    min-width: 600px;
 }
 
-.banners-carousel .banner-card {
-    flex: 0 0 min(600px, 100%);
-}
 
-.banner-card .project-image {
-    width: 100%;
+.banners-grid .project-image {
     height: 220px;
+}
 
-    background: #f7e7ec;
+
+.banners-grid .project-image img {
+    object-fit: contain;
 }
 
 
@@ -313,28 +358,35 @@ body {
 
 .about {
     padding: 110px 0;
+
     background: #fffafb;
 }
+
 
 .about-grid {
     display: grid;
 
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1fr);
 
     align-items: center;
 
     gap: 80px;
 }
 
+
 .about-image {
     width: 100%;
 }
+
 
 .about-image img {
     display: block;
 
     width: 100%;
     max-width: 420px;
+
     height: 520px;
 
     object-fit: cover;
@@ -343,9 +395,11 @@ body {
     border-radius: 12px;
 }
 
+
 .about-content {
     min-width: 0;
 }
+
 
 .about-content h2 {
     max-width: 520px;
@@ -360,6 +414,7 @@ body {
 
     margin-bottom: 25px;
 }
+
 
 .about-content > p:not(.eyebrow) {
     max-width: 500px;
@@ -383,6 +438,7 @@ body {
 
     margin-top: 28px;
 }
+
 
 .about-tags span {
     padding: 8px 13px;
@@ -408,13 +464,16 @@ footer {
     border-top: 1px solid #efd8df;
 }
 
+
 .footer-content {
     display: flex;
+
     justify-content: space-between;
     align-items: flex-end;
 
     gap: 30px;
 }
+
 
 .footer-contact {
     display: flex;
@@ -422,6 +481,7 @@ footer {
 
     gap: 8px;
 }
+
 
 .footer-name {
     color: #413940;
@@ -431,6 +491,7 @@ footer {
 
     margin-bottom: 5px;
 }
+
 
 .footer-contact a {
     width: fit-content;
@@ -444,14 +505,72 @@ footer {
     transition: 0.2s ease;
 }
 
+
 .footer-contact a:hover {
     color: #c97894;
 }
+
 
 .copyright {
     color: #9b858d;
 
     font-size: 10px;
+}
+
+
+/* MODAL */
+
+.modal-imagem {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    background: rgba(30, 20, 25, 0.90);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.modal-imagem.ativo {
+    display: flex;
+}
+
+
+.modal-imagem img {
+    display: block;
+
+    max-width: 95%;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+.fechar-modal {
+    position: absolute;
+
+    top: 18px;
+    right: 30px;
+
+    background: transparent;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    line-height: 1;
+
+    cursor: pointer;
 }
 
 
@@ -463,10 +582,13 @@ footer {
         min-height: 580px;
     }
 
+
     .about-grid {
         grid-template-columns: 1fr;
+
         gap: 50px;
     }
+
 
     .about-image img {
         max-width: 100%;
@@ -480,59 +602,82 @@ footer {
 
 @media (max-width: 600px) {
 
-    .container {
+    .container,
+    .projects-category {
         width: 88%;
     }
+
 
     .header {
         padding: 0 6%;
     }
 
+
     .nav {
         display: none;
     }
+
 
     .hero {
         min-height: 600px;
     }
 
+
     .hero h1 {
         font-size: 44px;
+
         letter-spacing: -1.5px;
     }
+
 
     .projects,
     .about {
         padding: 75px 0;
     }
 
-    .projects-carousel .project-card {
-        flex-basis: 150px;
+
+    .project-card {
+        flex: 0 0 150px;
+        min-width: 150px;
     }
+
 
     .project-image {
-        height: 185px;
+        height: 170px;
     }
 
-    .banners-carousel {
-        overflow-x: visible;
+
+    .banners-grid .project-card {
+        flex: 0 0 85vw;
+        min-width: 85vw;
     }
 
-    .banners-carousel .banner-card {
-        flex-basis: 100%;
+
+    .banners-grid .project-image {
+        height: 150px;
     }
 
-    .banner-card .project-image {
-        height: 125px;
-    }
 
     .about-image img {
         height: 430px;
     }
 
+
     .footer-content {
         flex-direction: column;
+
         align-items: flex-start;
+    }
+
+
+    .modal-imagem {
+        padding: 20px;
+    }
+
+
+    .fechar-modal {
+        top: 12px;
+        right: 18px;
     }
 
 }
