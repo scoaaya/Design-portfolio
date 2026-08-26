@@ -105,6 +105,9 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    text-align: center;
 
     background:
         radial-gradient(
@@ -115,28 +118,16 @@ body {
         #fffafb;
 }
 
-
 .hero-content {
-    max-width: 700px;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-.eyebrow {
-    color: #c97894;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 18px;
-}
-
 
 .hero h1 {
-    max-width: 720px;
-
-    color: #413940;
+    max-width: 850px;
 
     font-family: "Playfair Display", serif;
     font-size: clamp(42px, 6vw, 76px);
@@ -146,11 +137,12 @@ body {
     letter-spacing: -2px;
 
     margin-bottom: 24px;
+
+    color: #413940;
 }
 
-
 .hero-text {
-    max-width: 480px;
+    max-width: 580px;
 
     color: #756971;
 
@@ -159,7 +151,6 @@ body {
 
     margin-bottom: 30px;
 }
-
 
 .button {
     display: inline-block;
