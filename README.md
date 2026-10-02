@@ -1,25 +1,16 @@
-# Design Portfolio
+# Katrini Santos | Portfólio
 
-Portfólio pessoal desenvolvido para reunir projetos de design gráfico, comunicação visual e criativos digitais.
+Landing page profissional desenvolvida para apresentar minha experiência, competências e atuação nas áreas de tecnologia, performance e comunicação digital.
 
-## Sobre o projeto
-
-Este projeto foi criado como um espaço visual para apresentar trabalhos desenvolvidos nas áreas de:
-
-- Social Media
-- Criativos para campanhas
-- Design para anúncios
-- Comunicação visual
-- Identidade visual
-
-## Tecnologias utilizadas
+## Tecnologias
 
 - HTML5
 - CSS3
+- JavaScript
 
-## Visualizar projeto
+## Sobre
 
-🔗 **Acesse o portfólio:** [Clique aqui](https://scoaaya.github.io/Design-portfolio/)
+Portfólio pessoal desenvolvido como projeto acadêmico para a disciplina de Front-End da faculdade.
 
 ## Autora
 
@@ -27,4 +18,9 @@ Este projeto foi criado como um espaço visual para apresentar trabalhos desenvo
 
 Desenvolvedora Front-End e profissional de estratégia, performance e comunicação digital.
 
-[LinkedIn](https://www.linkedin.com/in/katrini-santos-292597265/)
+[LinkedIn](https://www.linkedin.com/in/katrini-santos-292597265/) · [GitHub](https://github.com/scoaaya)
+
+## Visualizar projeto
+
+🔗 **Acesse o portfólio:** [Clique aqui](https://scoaaya.github.io/Design-portfolio/)
+
